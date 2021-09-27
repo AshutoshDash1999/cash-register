@@ -1,0 +1,66 @@
+.container{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+h1{
+    color: #064E3B
+}
+
+input{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button{
+    padding: 0.7rem 1rem;
+    background: #34D399;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+input, button, table{
+    border-radius: 0.71rem;
+    border: solid #064E3B;
+}
+
+table{
+    text-align: center;
+    margin: auto;
+}
+
+tr, th, td{
+    border: 1px solid #10B981;
+    padding: 1.5rem;
+    border-radius: 0.71rem;
+}
+
+footer {
+    background: #10B981;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    display: inline;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #10B981;
+    background: white;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}

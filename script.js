@@ -11,13 +11,12 @@ function validate(){
     if (parseInt(billInput.value) > 0){
         if ( parseInt(cashInput.value) > parseInt(billInput.value)){
             var amountToReturn = parseInt(cashInput.value) - parseInt(billInput.value);
-            console.log(`Amount to return is ${amountToReturn}`)
+            output.innerText = `Amount to return is ₹${amountToReturn}.`
 
             for(var index = 0; index < notes.length; index++){
                 var numberOfNote = amountToReturn/notes[index];
                 numberOfNote = Math.floor(numberOfNote)
                 if(numberOfNote > 0){
-                    console.log("No. of", notes[index], "note, is", numberOfNote)
                     noOfNotes[index].innerText = numberOfNote;
                 }
                 amountToReturn = amountToReturn - (notes[index]*numberOfNote)
@@ -25,10 +24,10 @@ function validate(){
             
             
         } else {
-            output.innerText = "Cash should be greater than bill";
+            output.innerText = "Cash should be greater than bill!";
         }
     } else {
-        output.innerText  = "Bill amount should be greater than 0";
+        output.innerText  = "Bill amount should be greater than ₹0!";
     }
 }
 
